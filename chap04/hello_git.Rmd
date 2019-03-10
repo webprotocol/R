@@ -34,3 +34,11 @@ qplot(drv, hwy, data = mpg, geom="boxplot", color=drv)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{python python.reticulate = FALSE}
+print("hello python")
+```
+```{bash}
+ls -alF
+```
+

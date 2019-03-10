@@ -57,3 +57,20 @@ qplot(drv, hwy, data = mpg, geom="boxplot", color=drv)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
+
+``` python
+print("hello python")
+```
+
+    ## hello python
+
+``` bash
+ls -alF
+```
+
+    ## 합계 20
+    ## drwxrwxr-x 3 rhadoop rhadoop 4096  3월 10 15:24 ./
+    ## drwxrwxr-x 9 rhadoop rhadoop 4096  3월 10 15:06 ../
+    ## -rw-rw-r-- 1 rhadoop rhadoop  867  3월 10 15:24 hello_git.Rmd
+    ## -rw-rw-r-- 1 rhadoop rhadoop 2146  3월 10 15:18 hello_git.md
+    ## drwxrwxr-x 3 rhadoop rhadoop 4096  3월 10 15:09 hello_git_files/
