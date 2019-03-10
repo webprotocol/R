@@ -29,5 +29,31 @@ You can also embed plots, for example:
 
 ![](hello_git_files/figure-gfm/pressure-1.png)<!-- -->
 
+``` r
+library(ggplot2)
+mpg
+```
+
+    ## # A tibble: 234 x 11
+    ##    manufacturer model    displ  year   cyl trans   drv     cty   hwy fl   
+    ##    <chr>        <chr>    <dbl> <int> <int> <chr>   <chr> <int> <int> <chr>
+    ##  1 audi         a4        1.80  1999     4 auto(l… f        18    29 p    
+    ##  2 audi         a4        1.80  1999     4 manual… f        21    29 p    
+    ##  3 audi         a4        2.00  2008     4 manual… f        20    31 p    
+    ##  4 audi         a4        2.00  2008     4 auto(a… f        21    30 p    
+    ##  5 audi         a4        2.80  1999     6 auto(l… f        16    26 p    
+    ##  6 audi         a4        2.80  1999     6 manual… f        18    26 p    
+    ##  7 audi         a4        3.10  2008     6 auto(a… f        18    27 p    
+    ##  8 audi         a4 quat…  1.80  1999     4 manual… 4        18    26 p    
+    ##  9 audi         a4 quat…  1.80  1999     4 auto(l… 4        16    25 p    
+    ## 10 audi         a4 quat…  2.00  2008     4 manual… 4        20    28 p    
+    ## # ... with 224 more rows, and 1 more variable: class <chr>
+
+``` r
+qplot(drv, hwy, data = mpg, geom="boxplot", color=drv)
+```
+
+![](hello_git_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
